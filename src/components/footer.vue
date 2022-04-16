@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="page-footer">
     <div>
        <el-row >
         <el-col :xs="4" :sm="4" :md="4" :lg="4" :xl="4"><div></div></el-col>
@@ -17,6 +17,9 @@ export default {
 </script>
 
 <style scoped>
+.page-footer{
+  margin-bottom: 0px;
+}
 .el-row {
   background-color: #FFFFFF;
 }
@@ -25,6 +28,7 @@ export default {
   text-align: center;
   padding: 40px 0;
 }
+
 
 
 </style>
