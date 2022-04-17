@@ -1,13 +1,17 @@
+<script setup>
+import BodyMain from '../components/body.vue';
+import Footer from '../components/footer.vue';
+
+</script>
 <template>
-  <div>我是首页面</div>
+  <el-scrollbar max-height="100%">
+    <BodyMain></BodyMain>
+    <Footer></Footer>
+  </el-scrollbar>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style>
-
+.el-scrollbar__view{
+  height: 100% !important;
+}
 </style>

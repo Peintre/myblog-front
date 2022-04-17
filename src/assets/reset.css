@@ -1,8 +1,21 @@
+html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
 body{
-    background: url(//s1.hdslb.com/bfs/static/blive/blfe-message-web/static/img/infocenterbg.a1a0d152.jpg) top/cover no-repeat fixed;
+    background: url(images/backgroundImage.jpg) top/cover no-repeat fixed;
     font-size: 12px;
     line-height: 12px;
     color: #666;
     padding: 0;
     margin: 0;
+    height: 100%;
+    width: 100%;
 }
+
+.allBody{
+    height: 100%;
+}
+

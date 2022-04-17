@@ -1,19 +1,13 @@
 <script setup>
-import Header from './components/header.vue';
-
-
+import Header from "./components/Header.vue";
 </script>
+
 <template>
-   <!-- 导航条 -->
-   <Header/>  
-   <router-view/>
+      <Header></Header>
+      <router-view/>
 </template>
 
 
-
-<style>
-
-</style>
 
 
 

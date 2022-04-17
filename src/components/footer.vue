@@ -19,6 +19,7 @@ export default {
 <style scoped>
 .page-footer{
   margin-bottom: 0px;
+  height: 152px;
 }
 .el-row {
   background-color: #FFFFFF;
