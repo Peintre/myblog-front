@@ -10,12 +10,13 @@
         <el-menu
         mode="horizontal"
         >
-          <el-menu-item index="1">首页</el-menu-item>
-          <el-menu-item index="2">标签</el-menu-item>
-          <el-menu-item index="3">分类</el-menu-item>
-          <el-menu-item index="4">归档</el-menu-item>
-          <el-menu-item index="5">关于</el-menu-item>
-          <el-menu-item index="6">留言板</el-menu-item>
+          <el-menu-item index="1" @click="goToPage('index')">首页</el-menu-item>
+          <el-menu-item index="2" @click="goToPage('category')">分类</el-menu-item>
+          <el-menu-item index="3" @click="goToPage('tag')">标签</el-menu-item>
+          <el-menu-item index="4" @click="goToPage('archive')">归档</el-menu-item>
+          <el-menu-item index="5" @click="goToPage('about')">关于</el-menu-item>
+          <el-menu-item index="6" @click="goToPage('communication')">留言板</el-menu-item>
+          <el-menu-item index="7" @click="goToPage('login')">登录</el-menu-item>
         </el-menu> 
       </el-col>
       <el-col :xs="6" :sm="6" :md="6" :lg="6" :xl="6">
@@ -23,6 +24,44 @@
     </el-row>
 </div>
 </template>
+<script>
+export default{
+  data(){
+    return{
+
+    }
+  },
+  methods:{
+    goToPage(type){
+      switch(type){
+        case 'index':
+          this.$router.push('/home/index')
+          break;
+        case 'category':
+          this.$router.push('/home/category')
+          break;
+        case 'archive':
+          this.$router.push('/home/archive')
+          break;
+        case 'about':
+          this.$router.push('/home/about')
+          break;
+        case 'communication':  
+          this.$router.push('/home/communication')
+          break;
+        case 'tag':  
+          this.$router.push('/home/tag')
+          break;
+        case 'login':  
+          this.$router.push('/manageHome/login')
+          break;
+        default:
+          this.$router.push('/home/index')
+    }
+  }
+  }
+}
+</script>
 
 <style scoped>
 .layout-header{

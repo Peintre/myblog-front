@@ -1,5 +1,5 @@
 <template>
 <div>
-    我是标签页面
+    这是归档页面
 </div>
 </template>
